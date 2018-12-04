@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a.active{
+    color: #baa94a!important;
+}
+.borrad{
+    border-radius: 10px;
+}
+
+.fix{
+    position: fixed;
+    z-index: 10000000;
+}
+.red-crsl{
+    background-image: url("../medias/haircut.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.amber-crsl{
+    background-image: url("../medias/hairdresser.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.green-crsl{
+    background-image: url("../medias/hairdresser1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.blue-crsl{
+    background-image: url("../medias/barber.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg_carte{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+.login_bg{
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.pad{
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#user_termsAccepted{
+    opacity: 1!important;
+}
+.gold{
+    color: #baa94a!important;
+}
+
+.goldbg{
+    color: #baa94a!important;
+}
+
+
+.oxigen{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.greatvibes{
+    font-family: 'Great Vibes', cursive;
+}
+
+.gh:hover{
+    text-shadow: 0 0 4px #ffffff;
+}
+
+.padtop{
+    padding-top: 10px;
+}
+.padbot{
+    padding-bottom: 30px;
+}
+
+.margtop{
+    margin-top: 10%;
+}
+
+.margbot{
+    margin-bottom: 70px;
+    z-index: 10;
+}
+
+.mnmargrl{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.accueil h2{
+    margin-top: 15%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px!important;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4%;
+    padding-top: 6%;
+}
+
+.accueil p{
+    margin-top: 2%;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 25px!important;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+}
+
+#dropdown1{
+    top: -100%;
+    width: 20%!important;
+    margin-right: -20%!important;
+    left: 80%!important;
+    background-color: #000000;
+}
+
+.affichef{
+    width: 100vw;
+    height: 74vh;
+    margin-top: 8vh;
+    background-image: url("../medias/haircut.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel{
+    height: 100%!important;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+}
+
+.page-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0!important;
+    margin-bottom: 0;
+    z-index: 100;
+}
+
