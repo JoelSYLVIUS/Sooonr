@@ -18,7 +18,7 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 class DefaultController extends AbstractController
 {
     /**
-     * @Route(path="/", methods={"GET"}, name="app_default_home")
+     * @Route(path="/", methods={"GET"}, name="app_homepage")
      *
      * @return string
      */
