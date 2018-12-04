@@ -3,10 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        <nav class="transparent fix gold">
+            <div class="nav-wrapper black mnmargrl">
+                <a href="/" class="brand-logo"><img src="medias/Logo-soonr.png" alt=""></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="gold gh" href="/artists">Artists</a></li>
+                    <li><a class="gold gh" href="/carte">Chanteur</a></li>
+                    <!-- <li><a class="gold gh" href="/admin/reservation/">Reservation</a></li>
+                    <li><a class="gold gh" href="/products">Products</a></li>
+                    <li><a class="gold gh" href="/galerie">Galerie</a></li> -->
+                    <li><a class="gold gh" href="/contact">Contact</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons gold right">account_circle</i></a></li>
+                </ul>
+            </div>
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                {% if app.user is null %}
+                    <li class="center"><a class="gold" href="/login">Connexion<i class="material-icons gold right">lock_open</i></a></li>
+                {% endif %}
+                {% if app.user is not null %}
+                    <li class="center"><a class="gold" href="/profil">Profil de {{ app.user.username }}<i class="material-icons gold right">account_circle</i></a></li>
+                    <!-- <li class="center"><a class="gold" href="{#{ path('profile_show') }#}">Profil de {#{ app.user.username }#}<i class="material-icons gold right">account_circle</i></a></li> -->
+
+                    <li class="divider"></li>
+                    <li class="center"><a class="gold" href="/logout">Déconnexion<i class="material-icons gold right">lock</i></a></li>
+                {% endif %}
+
+            </ul>
+        </nav>
         {% block body %}{% endblock %}
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".dropdown-trigger").dropdown();
+            })
+        </script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
